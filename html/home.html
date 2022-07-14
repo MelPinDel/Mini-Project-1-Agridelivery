@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>AgriDelivery</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="myScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--Product Slider-->
+    <link rel="stylesheet" type="text/css" href="/MiniProject/Lightslider files/lightslider.css">
+    <!--Jquery-->
+    <script type="text/javascript" src="Jquery.js"></script>
+    <!--lightslider.js-->
+    <script type="text/javascript" src="/MiniProject/Lightslider files/lightslider.js"></script>
+</head>
+
+<body class="container-fluid">
+<!-- Modal On Load-->
+<div class="popup_wrapper modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body lazyload">
+          <div class="newsletter_popup_inner" style="background-image: url('//cdn.shopify.com/s/files/1/0644/5639/2960/files/popup.jpg?v=1655093766');">
+            <button type="button" class="close" data-bs-dismiss="modal"><i class="ion-close-round"></i></button>
+            <div class="subscribe_area">
+              <div class="subscribe-heading">
+                <a href="javascript:void(0)" class="news-letter-img"><img src="//cdn.shopify.com/s/files/1/0644/5639/2960/files/favicon_112x55.png?v=1654314017" alt="" class="img-fluid"></a>
+                <h2 style="color: #232323;">Become A Subscriber</h2>
+                <p>Subscribe to get the notification of latest posts</p>
+              </div>
+              <div class="subscribe-form-group">
+                <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+                
+                
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                  <input type="email" class="subscribe-form" id="E-mail" value="" name="contact[email]" placeholder="Your email address" required>
+                  <button type="submit" name="commit" class="btn btn-style1" id="Subscribe">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--Row 1 Top Header-->
+<div class="row top-header text-light justify-content-sm-between">
+    <div class="col-sm-auto d-flex justify-content-center">
+        <p class="mb-1 text-center"><span class="glow">Free Shipping</span> Orders From All Item</p>
+    </div>
+    <div class="col-sm-auto d-flex align-items-center">
+        <div class="container d-flex justify-content-center">
+        <div class="row">
+        <div class="col-auto px-1">
+            <a class="text-decoration-none text-light" href="about.html">About Us</a>
+        </div>
+
+        <div class="col-auto px-1">
+            <a class="text-decoration-none text-light" href="contact.html">Contact Us</a>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!---->
+
+<!--Row 2 Mid Header-->
+<div class="row d-flex justify-content-center">
+    <div class="col-sm-4 d-flex justify-content-center px-1">
+        <a href="home.html"><img src="/MiniProject/media/logo.jpg" style="width:90%"/></a>
+    </div>
+
+    <div class="col-sm-5 d-flex align-items-center justify-content-center">
+        <form action="/action_page.php" class="w-100 d-flex justify-content-center py-1">
+            <input type="search" placeholder="Search Product" required class="input-text border border-success" style="width:85%">
+            <button class="search-btn  border border-success  bg-success bg-opacity-50" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+    </div>
+
+    <div class="col-sm-3 d-flex align-items-center justify-content-center">
+        <a href="login.html"><button class="btn btn-outline-success" type="button"><i class="bi bi-heart" style="font-size: 15px"></i></button></a>
+        <a href="login.html"><button class="btn btn-outline-success mx-1" type="button"><i class="bi bi-cart4" style="font-size: 15px"></i></button></a>
+        <a href="login.html"><button class="btn btn-outline-success" type="button"><i class="bi bi-person" style="font-size: 15px"></i></button></a>
+    </div>
+</div>
+<!---->
+
+<!--Row 3 Top Nav-->
+<div class="row my-1 sticky-top topnav-container flex-nowrap" style="background-color:#5fa801;">
+    <div class="col d-flex justify-content-center px-1">
+        <a class="active p-1" href="#home">Home</a>
+    </div>
+    <div class="col d-flex justify-content-center px-1">
+        <a class="p-1" href="shop.html">Shop</a>
+    </div>
+    <div class="col d-flex justify-content-center px-1">
+        <a class="p-1" href="#collection">Reviews</a>
+    </div>
+    <div class="col d-flex justify-content-center px-1">
+        <a class="p-1" href="#news">News</a>
+    </div>
+</div>
+<!---->
+<!--Row 4 Banner1-->
+<div class="row">
+    <div class="col-sm-12 p-0">
+        <!-- Carousel code -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li type="button" data-target="#carouselExampleCaptions" data-slide-to="0" class="active btn-success"></li>
+              <li class="btn-success" data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li class="btn-success" data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/MiniProject/media/slider1.webp" class="d-block w-100" alt="First slide">
+                    <div class="carousel-caption text-black">
+                    <h3>100% Organic Vegetables</h3>
+                    </div>
+                </div>
+
+              <div class="carousel-item">
+                <img src="/MiniProject/media/slider2.webp" class="d-block w-100" alt="Second slide">
+                <div class="carousel-caption text-black">
+                <h3>Fruits Fresh from the Farm</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/MiniProject/media/slider3.webp" class="d-block w-100" alt="Third slide">
+                <div class="carousel-caption text-black">
+                <h3>Juice for Every Diet </h3>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" style="background-color:green;" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" style="background-color:green;" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+</div> 
+
+<!--Row 5 Banner2 (WhyUs)-->
+<div class="row d-flex justify-content-center m-2 py-2 border border-success">
+    <div class="col-sm-3 text-center">
+        <img class="vanicon" src="/MiniProject/media/vanicon.jpg"/>
+        <h5>Fast & Free Delivery</h5>
+        <p>Orders from all item</p>
+    </div>
+    <div class="col-sm-3 text-center">
+        <img class="dollaricon" src="/MiniProject/media/dollar.png"/>
+        <h5>Return & Refund</h5>
+        <p>Money back guarantee</p>
+    </div>
+    <div class="col-sm-3 text-center">
+        <img class="dollaricon" src="/MiniProject/media/support.png"/>
+        <h5>Quality Support</h5>
+        <p>Always online 24/7</p>
+    </div>
+    <div class="col-sm-3 text-center">
+        <img class="dollaricon" src="/MiniProject/media/envelopeicon.jpg"/>
+        <h5>Join Newsletter</h5>
+        <p>20% off by subscribing</p>
+    </div>
+</div>
+       
+<!--Row 6 Banner3 (Best Buy)-->
+<div class="row d-flex justify-content-between py-2 px-4">
+    <div class="col-md-3 p-0 my-1 d-flex align-items-center justify-content-center">
+        <div class="container d-flex align-items-center justify-content-center flex-nowrap category1">
+            <div class="row justify-content-center">
+            <div class="col-sm-auto p-2">
+                <p class="catDesc"><b>Winter Fruits</b></p>
+                <h5>Organic Fruits</h5>
+                <a href="shop.html"><button class="btn btn-success fs-6 p-1 border-0">Shop Now</button></a>
+            </div>
+            <div class="col-sm-auto d-flex justify-content-center">
+                <img  class="d-block w-100" src="/MiniProject/media/orange.png">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 p-0 m-1 d-flex align-items-center justify-content-center">
+        <div class="container d-flex align-items-center justify-content-center flex-nowrap category2">
+            <div class="row justify-content-center">
+            <div class="col-sm-auto p-2">
+                <p class="catDesc"><b>Best Fruits</b></p>
+                <h5>Fresh Grocery</h5>
+                <a href="shop.html"><button class="btn btn-success fs-6 p-1 border-0">Shop Now</button></a>
+             
+            </div>
+            <div class="col-sm-auto d-flex justify-content-center">
+                <img  class="d-block w-100 pb-1" src="/MiniProject/media/apple.png">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 p-0 m-1 d-flex align-items-center justify-content-center">
+        <div class="container d-flex align-items-center justify-content-center flex-nowrap category3">
+            <div class="row justify-content-center">
+                <div class="col-sm-auto p-2">
+                    <p class="catDesc"><b>Fresh Food</b></p>
+                    <h5>Healthy Veggies</h5>
+                    <a href="shop.html"><button class="btn btn-success fs-6 p-1 border-0">Shop Now</button></a>
+                </div>
+                <div class="col-sm-auto d-flex justify-content-center">
+                    <img  class="d-block w-100 pb-1" src="/MiniProject/media/brocolli.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+<!--Row 7 Banner4 (Product Preview)-->
+<h2 class="pt-5">Our Products</h2>
+<section class="slider">
+    <ul id="autoWidth" class="cs-hidden">
+        <!--item-list1-->
+        <li class="item-a">
+            <!--Box Slider-->
+            <div class="box">
+                <!--img-box-->
+                <div class="slide-img">
+                    <img src="/MiniProject/media/avocado.png">
+                    <!--overlay-->
+                    <div class="overlay">
+                        <!--buy-btn-->
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+    
+                <!--detail-box-->
+                <div class="detail-box">
+                    <!--type-->
+                    <div class="type">
+                        <a href="#">Fresh Veggies</a>
+                        <span>Top Selling</span>
+                    </div>
+                    <!--price-->
+                    <a href="#" class="price">P150.00</a>
+                </div>
+            </div>
+    
+        </li>
+        <!--item-list2-->
+        <li class="item-b">
+            <!--Box Slider-->
+            <div class="box">
+                <!--img-box-->
+                <div class="slide-img">
+                    <img src="/MiniProject/media/orange.png">
+                    <!--overlay-->
+                    <div class="overlay">
+                        <!--buy-btn-->
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+    
+                <!--detail-box-->
+                <div class="detail-box">
+                    <!--type-->
+                    <div class="type">
+                        <a href="#">Fresh Veggies</a>
+                        <span>Top Selling</span>
+                    </div>
+                    <!--price-->
+                    <a href="#" class="price">P150.00</a>
+                </div>
+            </div>
+    
+        </li>
+        <!--item-list3-->
+        <li class="item-c">
+            <!--Box Slider-->
+            <div class="box">
+                <!--img-box-->
+                <div class="slide-img">
+                    <img src="/MiniProject/media/apple.png">
+                    <!--overlay-->
+                    <div class="overlay">
+                        <!--buy-btn-->
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+    
+                <!--detail-box-->
+                <div class="detail-box">
+                    <!--type-->
+                    <div class="type">
+                        <a href="#">Fresh Veggies</a>
+                        <span>Top Selling</span>
+                    </div>
+                    <!--price-->
+                    <a href="#" class="price">P150.00</a>
+                </div>
+            </div>
+    
+        </li>
+        <!--item-list4-->
+        <li class="item-d">
+            <!--Box Slider-->
+            <div class="box">
+                <!--img-box-->
+                <div class="slide-img">
+                    <img src="/MiniProject/media/apple.png">
+                    <!--overlay-->
+                    <div class="overlay">
+                        <!--buy-btn-->
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+    
+                <!--detail-box-->
+                <div class="detail-box">
+                    <!--type-->
+                    <div class="type">
+                        <a href="#">Fresh Veggies</a>
+                        <span>Top Selling</span>
+                    </div>
+                    <!--price-->
+                    <a href="#" class="price">P150.00</a>
+                </div>
+            </div>
+    
+        </li>
+        <!--item-list5-->
+        <li class="item-e">
+            <!--Box Slider-->
+            <div class="box">
+                <!--img-box-->
+                <div class="slide-img">
+                    <img src="/MiniProject/media/apple.png">
+                    <!--overlay-->
+                    <div class="overlay">
+                        <!--buy-btn-->
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+    
+                <!--detail-box-->
+                <div class="detail-box">
+                    <!--type-->
+                    <div class="type">
+                        <a href="#">Fresh Veggies</a>
+                        <span>Top Selling</span>
+                    </div>
+                    <!--price-->
+                    <a href="#" class="price">P150.00</a>
+                </div>
+            </div>
+    
+        </li>
+        <!--item-list6-->
+        <li class="item-f">
+            <!--Box Slider-->
+            <div class="box">
+                <!--img-box-->
+                <div class="slide-img">
+                    <img src="/MiniProject/media/apple.png">
+                    <!--overlay-->
+                    <div class="overlay">
+                        <!--buy-btn-->
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+    
+                <!--detail-box-->
+                <div class="detail-box">
+                    <!--type-->
+                    <div class="type">
+                        <a href="#">Fresh Veggies</a>
+                        <span>Top Selling</span>
+                    </div>
+                    <!--price-->
+                    <a href="#" class="price">P150.00</a>
+                </div>
+            </div>
+    
+        </li>
+        <!--item-list7-->
+        <li class="item-g">
+            <!--Box Slider-->
+            <div class="box">
+                <!--img-box-->
+                <div class="slide-img">
+                    <img src="/MiniProject/media/apple.png">
+                    <!--overlay-->
+                    <div class="overlay">
+                        <!--buy-btn-->
+                        <a href="#" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+    
+                <!--detail-box-->
+                <div class="detail-box">
+                    <!--type-->
+                    <div class="type">
+                        <a href="#">Fresh Veggies</a>
+                        <span>Top Selling</span>
+                    </div>
+                    <!--price-->
+                    <a href="#" class="price">P150.00</a>
+                </div>
+            </div>
+    
+        </li>
+    </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+              
+        <div class="row d-flex justify-content-center">
+            <!--Card 1-->
+            <div class="col-3 card m-3">
+                <img src="/AgriDelivery/avocado.png" class="card-img-top" alt="Avocado">
+                <div class="card-body">
+                <h5 class="card-title">Avocado</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Details
+                    </button>
+                </div>
+            </div>
+            <!--Card 2-->
+            <div class="col-3 card m-3">
+                <img src="/AgriDelivery/bellpepper.png" class="card-img-top" alt="..." width="200px" height="200px">
+                <div class="card-body">
+                <h5 class="card-title">Bellpepper</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Details
+                    </button>
+                </div>
+            </div>
+
+            <!--Card 3-->
+            <div class="col-3 card m-3">
+                <img src="/AgriDelivery/brocolli.png" class="card-img-top" alt="..." width="200px" height="200px">
+                <div class="card-body">
+                <h5 class="card-title">Broccoli</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Details
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <!--Card 4-->
+            <div class="col-3 card m-3">
+                <img src="/AgriDelivery/apple.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Apple</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Details
+                    </button>
+                </div>
+            </div>
+            <!--Card 5-->
+            <div class="col-3 card m-3">
+                <img src="/AgriDelivery/pomegranate.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Fresh Pomegranate</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Details
+                    </button>
+                </div>
+            </div>
+            <!--Card 6-->
+            <div class="col-3 card m-3">
+                <img src="/AgriDelivery/tomato.png" class="card-img-top" alt="...">
+                <div class="card-body ">
+                <h5 class="card-title">Red Tomato</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- New Customer Offers-->
+        <div class="newcustbg">
+            <img src="newcustomer.jpg">
+            <div class="newcustext bg-success bg-opacity-50">
+                <h1>New Customer Offers</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur, facere neque praesentium tempore autem nam iure quo voluptates. Nisi, omnis? Aliquid, aut ad? Cum reprehenderit sapiente maiores necessitatibus fugit!</p>
+            </div>
+        </div>
+
+        <!-- Testimonial-->
+        <div class="testimonial" style="margin-top:350px;">
+            <!--Carousel-->
+            <div class="col-12 p-4 bg-warning">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-dark"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-dark" aria-label=""></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-dark"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="/AgriDelivery/apple.png" class="d-block w-100" height="350" alt="Apple">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5>Juicy Apple</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="/AgriDelivery/bellpepper.png" class="d-block w-100" height="350" alt="Bellpepper">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5>Bellpepper</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="/AgriDelivery/avocado.png" class="d-block w-100" height="350" alt="Cabbage">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5>Avocado</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-success" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" role="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-success"></span>
+                    <span class="visually-hidden">Next</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Footer-->
+        
+        <!-- <footer>
+            <table class="links">
+                <th>Category</th>
+                <th>Privacy & Terms</th>
+                <th>My Account</th>
+                <th>Quick Links</th>
+
+                <tr>
+                    <td>Dried Fruit</td>
+                    <td>About Us</td>
+                    <td>My Wishlist</td>
+                    <td>FAQ's</td>
+                </tr>
+                <tr>
+                    <td>Drink Mixes</td>
+                    <td>Privacy Policy</td>
+                    <td>Order History</td>
+                    <td>Wishlist</td>
+                </tr>
+                <tr>
+                    <td>Fresh Bread</td>
+                    <td>Return Policy</td>
+                    <td>My Cart</td>
+                    <td>Order Summary</td>
+                </tr>
+                <tr>
+                    <td>Pies & Cakes</td>
+                    <td>Shipping Policy</td>
+                    <td>My Account</td>
+                    <td>Shipping Policy</td>
+                </tr>
+                <tr>
+                    <td>Cookies</td>
+                    <td>Terms & Conditions</td>
+                    <td>News</td>
+                    <td>Terms & Conditions</td>
+                </tr>
+            </table>
+        </footer> -->
+        <footer class="copyright">
+            Copyright 2022 All Rights Reserved
+        </footer>
+        
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Broccoli</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="/AgriDelivery/brocolli.png"/>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ad illo aperiam nulla! Quia ratione explicabo sequi assumenda aliquid distinctio, eveniet eius iusto rerum dolore velit ipsum quis odit illo!</p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+            <button type="button" class="btn btn-success">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="productSlider.js"></script>
+</body>
+</html>
