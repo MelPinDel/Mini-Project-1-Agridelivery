@@ -1,242 +1,880 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>AgriDelivery</title>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+<head>
+    <title>AgriDelivery</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <body>
-        <div class="header-container" >
-    <!---------------TOP HEADER----------->            
-            <div class="topheader">
-                <div class="freeshipping">
-                    <p><span class="glow">Free Shipping</span> Orders From All Item</p>
-                </div>
-                
-                <div class="aboutlink">
-                    <a href="about.html">About Us</a>
-                </div>
+    <!--JS-->
+    <script src="/js/myScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-                <div class="aboutlink">
-                    <a href="contact.html">Contact Us</a>
-                </div>
-            </div>
-<!--------------------------------------->
-<!---------------MID HEADER-------------->
+    <!--Product Slider-->
+    <link rel="stylesheet" type="text/css" href="/Lightslider files/lightslider.css">
+    <!--Jquery-->
+    <script type="text/javascript" src="/js/Jquery.js"></script>
+    <!--lightslider.js-->
+    <script type="text/javascript" src="/Lightslider files/lightslider.js"></script>
+</head>
 
-            <div class="mid-container">
+<body class="container-fluid topselling">
 
-                <div class="logo-container">
-                    <a href="home.html"><img class="logo" src="logo.jpg"/></a>
-                </div>
-
-                <div class="search-container">
-                    <form action="/action_page.php">
-                        <input type="search" placeholder="Search Product." required class="input-text">
-                        <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-
-                <div class="right-nav">
-                    <a href="login.html"><button class="login" type="button">Login</button></a>
-                </div>
-
-            </div>
-            
+<!--Row 1 Top Header-->
+<div class="row top-header text-light justify-content-sm-between">
+    <div class="col-sm-auto d-flex justify-content-center">
+        <p class="mb-1 text-center"><span class="glow">Free Shipping</span> Orders From All Item</p>
+    </div>
+    <div class="col-sm-auto d-flex align-items-center">
+        <div class="container d-flex justify-content-center">
+        <div class="row">
+        <div class="col-auto px-1">
+            <a class="text-decoration-none text-light" href="about.html">About Us</a>
         </div>
-    <!---------------------------------------->
 
-    <!--------------TOP NAV------------------>
-
-        <div class="topnav-container">
-            <a href="home.html">Home</a>
-            <a class="active" href="#shop">Shop</a>
-            <a href="#collection">Collection</a>
-            <a href="#blog">Blog</a>
-            <a href="#pages">Pages</a>
+        <div class="col-auto px-1">
+            <a class="text-decoration-none text-light" href="contact.html">Contact Us</a>
         </div>
-    <!---------------------------------------->
+        </div>
+        </div>
+    </div>
+</div>
+<!---->
 
-        <!--First Row of Products-->
-        <table class="products">
-            <tr>
-                <td><img src="pineapple.JPG"></td>
-                <td><img src="mango.JPG"></td>
-                <td><img src="lemon.JPG"></td>
-                <td><img src="strawberry.JPG"></td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Pineapple Slice</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Tasty Mango</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Lemon Slice</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Strawberry Seeds</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-            </tr>
-            <!--Second Row Products List-->
-            <tr>
-                <td><img src="avocado.JPG"></td>
-                <td><img src="bellpepper.JPG"></td>
-                <td><img src="broccolli.JPG"></td>
-                <td><img src="cabbage.JPG"></td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Avocado</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Bell Pepper</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Broccoli</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Cabbage</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-            </tr>
-            <!--Third Row Products List-->
-            <tr>
-                <td><img src="pineapple.JPG"></td>
-                <td><img src="mango.JPG"></td>
-                <td><img src="lemon.JPG"></td>
-                <td><img src="strawberry.JPG"></td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Pineapple Slice</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Tasty Mango</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Lemon Slice</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Strawberry Seeds</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-            </tr>
-           
-            <!--Second Row Products List-->
-            <tr>
-                <td><img src="avocado.JPG"></td>
-                <td><img src="bellpepper.JPG"></td>
-                <td><img src="broccolli.JPG"></td>
-                <td><img src="cabbage.JPG"></td>
-            </tr>
-            <tr>
-                <td>
-                    <h2>Avocado</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Bell Pepper</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Broccoli</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-                <td>
-                    <h2>Cabbage</h2>
-                    <h3>P100.00</h3>
-                    <button>Add To Cart</button>
-                </td>
-            </tr>
-        </table>
+<!--Row 2 Mid Header-->
+<div class="row d-flex justify-content-center">
+    <div class="col-sm-4 d-flex justify-content-center px-1">
+        <a href="home.html"><img src="/media/logo.jpg" style="width:90%"/></a>
+    </div>
+
+    <div class="col-sm-5 d-flex align-items-center justify-content-center">
+        <form action="/action_page.php" class="w-100 d-flex justify-content-center py-1">
+            <input type="search" placeholder="Search Product" required class="input-text border border-success" style="width:85%">
+            <button class="search-btn  border border-success  bg-success bg-opacity-50" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+    </div>
+
+    <div class="col-sm-3 d-flex align-items-center justify-content-center">
+        <a href="login.html"><button class="btn btn-outline-success" type="button"><i class="bi bi-heart" style="font-size: 15px"></i></button></a>
+        <a href="login.html"><button class="btn btn-outline-success mx-1" type="button"><i class="bi bi-cart4" style="font-size: 15px"></i></button></a>
+        <a href="login.html"><button class="btn btn-outline-success" type="button"><i class="bi bi-person" style="font-size: 15px"></i></button></a>
+    </div>
+</div>
+<!---->
+
+<!--Row 3 Top Nav-->
+<div class="row my-1 sticky-top topnav-container flex-nowrap" style="background-color:#5fa801;">
+    <div class="col d-flex justify-content-center px-1">
+        <a class="p-1" href="home.html">Home</a>
+    </div>
+    <div class="col d-flex justify-content-center px-1">
+        <a class="active p-1" href="shop.html">Shop</a>
+    </div>
+    <div class="col d-flex justify-content-center px-1">
+        <a class="p-1" href="home.html#reviews">Reviews</a>
+    </div>
+    <div class="col d-flex justify-content-center px-1">
+        <a class="p-1" href="#news">News</a>
+    </div>
+</div>
+<!---->
+
+<!--(Fresh Fruits)-->
+<br id="fruits">
+<div class="row">
+    <h3 class="p-3";>Fresh Fruits</h3>
+    
+    <section class="slider">
+        <ul id="autoWidth" class="cs-hidden">
+            <!--item-list1-->
+            <li class="item-a">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/avocado.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                    
+                </div>
+        
+            </li>
+            <!--item-list2-->
+            <li class="item-b">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/orange.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list3-->
+            <li class="item-c">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list4-->
+            <li class="item-d">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/brocolli.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list5-->
+            <li class="item-e">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list6-->
+            <li class="item-f">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list7-->
+            <li class="item-g">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+        </ul>
+    </section>
+</div>
+
+<!--(Organic Vegetables)-->
+<br id="veggies">
+<div class="row mt-1">
+    <h3 class="p-3";>Organic Vegetables</h3>
+    
+    <section class="slider">
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--item-list1-->
+            <li class="item-a">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/avocado.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                    
+                </div>
+        
+            </li>
+            <!--item-list2-->
+            <li class="item-b">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/orange.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list3-->
+            <li class="item-c">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list4-->
+            <li class="item-d">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/brocolli.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list5-->
+            <li class="item-e">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list6-->
+            <li class="item-f">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list7-->
+            <li class="item-g">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+        </ul>
+    </section>
+</div>
+
+<!--(All-Natural Juices)-->
+<br id="juice">
+<div class="row mt-1">
+    <h3 class="p-3";>All-Natural Juices</h3>
+    
+    <section class="slider">
+        <ul id="autoWidth3" class="cs-hidden">
+            <!--item-list1-->
+            <li class="item-a">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/avocado.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                    
+                </div>
+        
+            </li>
+            <!--item-list2-->
+            <li class="item-b">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/orange.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list3-->
+            <li class="item-c">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list4-->
+            <li class="item-d">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/brocolli.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list5-->
+            <li class="item-e">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list6-->
+            <li class="item-f">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                </div>
+        
+            </li>
+            <!--item-list7-->
+            <li class="item-g">
+                <!--Box Slider-->
+                <div class="box">
+                    <!--img-box-->
+                    <div class="slide-img bg-slider">
+                        <img src="/media/apple.png">
+                        <!--overlay-->
+                        <div class="overlay">
+                            <!--buy-btn-->
+                            <a href="#" class="buy-btn">Buy Now</a>
+                        </div>
+                    </div>
+        
+                    <!--detail-box-->
+                    <div class="detail-box">
+                        <!--type-->
+                        <div class="type">
+                            <a href="#">Avocado</a>                       
+                        </div>
+                        <!--price-->
+                        <a class="price">P150.00/kg</a>
+                    </div>
+                    <div class="pb-3 text-center">
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                        <span class="bi bi-star-fill checked"></span>
+                    </div>
+                </div>
+        
+            </li>
+        </ul>
+    </section>
+</div>
+
      
-            <!-- Footer-->
+<!--Footer-->
+<div class="row bg-dark text-light text-center p-3">
+    <div class="col-sm-2 p-0">
+        <div>
+            <a href="home.html"><img src="/media/logo.jpg" style="width:90%"/></a>
+        </div>
+        <div class="d-flex justify-content-evenly fs-4 footerlinks">
+            <a href="https://www.whatsapp.com"><span class="bi bi-whatsapp"></span></a>
+            <a href="https://web.facebook.com"><span class="bi bi-facebook"></span></a>
+            <a href="https://twitter.com"><span class="bi bi-twitter"></span></a>
+            <a href="https://www.instagram.com"><span class="bi bi-instagram"></span></a>
+            <a href="https://www.youtube.com"><span class="bi bi-youtube"></span></a>
+        </div>
+    </div>
 
-        <footer>
-            <table class="shopfooter">
-                <th>Category</th>
-                <th>Privacy & Terms</th>
-                <th>My Account</th>
-                <th>Quick Links</th>
+    <div class="col-sm-8">
+        <div class="row">
+            <div class="col-sm-3 footerlinks py-2">
+                <h6>Category</h6>
+                <a href="shop.html#fruits">Fruits</a><br>
+                <a href="shop.html#veggies">Veggies</a><br>
+                <a href="shop.html#juice">Juice</a>
+            </div>
+            <div class="col-sm-3 footerlinks py-2">
+                <h6>Privacy & Terms</h6>
+                <a href="#">Privacy Policy</a><br>
+                <a href="#">Returns Policy</a><br>
+                <a href="#">Shipping Policy</a>
+            </div>
+            <div class="col-sm-3 footerlinks py-2">
+                <h6>My Account</h6>
+                <a href="#">Log-in</a><br>
+                <a href="#">Sign-up</a><br>
+                <a href="#">Order History</a>
+            </div>
+            <div class="col-sm-3 footerlinks py-2">
+                <h6>Quick Links</h6>
+                <a href="#">About Us</a><br>
+                <a href="#">Contact Us</a><br>
+                <a href="#">Visit Us</a>
+            </div>
+        </div>
+    </div>
 
-                <tr>
-                    <td>Dried Fruit</td>
-                    <td>About Us</td>
-                    <td>My Wishlist</td>
-                    <td>FAQ's</td>
-                </tr>
-                <tr>
-                    <td>Drink Mixes</td>
-                    <td>Privacy Policy</td>
-                    <td>Order History</td>
-                    <td>Wishlist</td>
-                </tr>
-                <tr>
-                    <td>Fresh Bread</td>
-                    <td>Return Policy</td>
-                    <td>My Cart</td>
-                    <td>Order Summary</td>
-                </tr>
-                <tr>
-                    <td>Pies & Cakes</td>
-                    <td>Shipping Policy</td>
-                    <td>My Account</td>
-                    <td>Shipping Policy</td>
-                </tr>
-                <tr>
-                    <td>Cookies</td>
-                    <td>Terms & Conditions</td>
-                    <td>News</td>
-                    <td>Terms & Conditions</td>
-                </tr>
-            </table>
-        </footer>
+    <div class="col-sm-2 pt-2">
+        <h3><i>We Accept:</i></h3>
+        <div class="d-flex justify-content-evenly fs-5 footerlinks">
+           <a href="https://paypal.com" data-bs-toggle="tooltip" title="Paypal"><span class="bi bi-paypal"></span></a>
+           <a href="#" data-bs-toggle="tooltip" title="Credit Card"><span class="bi bi-credit-card-fill"></span></a>
+           <a href="https://bitcoin.com" data-bs-toggle="tooltip" title="Bitcoin"><span class="bi bi-currency-bitcoin"></span></a>
+           <a href="#" data-bs-toggle="tooltip" title="Cash On Delivery"><span class="bi bi-cash-stack"></span></a>
+        </div>      
+    </div>
+</div>
 
-        <footer class="copyright">
-            Copyright 2022 All Rights Reserved
-        </footer>
-
-    </body>
-
-
-
-
-
-
-
-
-
-
-
-
+<footer class="row copyright justify-content-center">
+    Copyright 2022 All Rights Reserved
+</footer>
+ 
+<script type="text/javascript" src="/js/productSlider.js"></script>
+</body>
 </html>
