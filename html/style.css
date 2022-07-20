@@ -57,9 +57,7 @@
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
 }
 
 /* Change the color of links on hover */
@@ -303,13 +301,9 @@ background: linear-gradient(to bottom,  #f8ffe8 0%,#e3f5ab 33%,#b7df2d 100%);
 
 .testimonial-box {
     width: 240px;
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
-    overflow: hidden;
-}
-
-.testimonial {
-    background: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%);
+    overflow: scroll;
 }
 
 /* News */
