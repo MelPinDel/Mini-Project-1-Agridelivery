@@ -5,7 +5,6 @@
     background-position: center;
 }
 
-
 .glow {
     color: #ffffff;
     font-size: 20px;
@@ -72,8 +71,6 @@ background-color: #036e39;
 color: white;
 }
 
-  
-/* HOME CONTENT STYLE*/
 
 /*BANNER2*/
 
@@ -82,7 +79,6 @@ color: white;
     height: 10vw;
     }
 
-/*--------------------*/
 
 /*BANNER3*/
 .zoom:hover {
@@ -108,8 +104,6 @@ color: white;
 .catDesc {
     color: #00cc00;
 }
-
-/*----------------*/
 
 /*BANNER4*/
 .gradient {
