@@ -303,7 +303,7 @@ background: linear-gradient(to bottom,  #f8ffe8 0%,#e3f5ab 33%,#b7df2d 100%);
     width: 240px;
     height: 300px;
     border-radius: 10px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 /* News */
